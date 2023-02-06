@@ -19,13 +19,11 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    @Transactional
     public List<User> showUsers() {
         return userDAO.showUsers();
     }
 
     @Override
-    @Transactional
     public User showUser(int id) {
         return userDAO.showUser(id);
     }
